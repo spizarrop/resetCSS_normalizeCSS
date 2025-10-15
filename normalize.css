@@ -1,0 +1,54 @@
+/* ======= Normalize.css ======= */
+/* En lugar de eliminar, ajusta los estilos para hacerlos consistentes entre navegadores */
+
+/* 1. Asegura que el HTML usa un box-sizing más predecible */
+html {
+  box-sizing: border-box;
+}
+
+/* 2. Hereda box-sizing para todos los elementos */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* 3. Mejora la tipografía por defecto */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+/* 4. Asegura que los encabezados tienen márgenes consistentes */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+/* 5. Mantiene el estilo de listas pero las hace más consistentes */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+/* 6. Mejora la apariencia de los enlaces */
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 7. Ajusta imágenes para que no sobresalgan de su contenedor */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 8. Hace que los botones se vean igual en todos los navegadores */
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
